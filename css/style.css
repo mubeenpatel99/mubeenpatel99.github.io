@@ -217,3 +217,12 @@ img:hover{
 .footer-text{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* Comtact form */
+.contact-form{
+    margin-top: 10%;
+}
+
+.contact{
+    color: lightcoral;
+}
