@@ -182,6 +182,7 @@ img:hover{
 
 .card{
     width: 20rem;
+    margin: auto;
 }
 
 .card-text{
