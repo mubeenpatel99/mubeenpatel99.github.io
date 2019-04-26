@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lato';
+}
+
+.navbar-brand{
+    font-family: 'Pacifico';
+    font-size: 35px;
+    color: lightcoral !important;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: #000 !important;
+    margin: 15px;
+    font-family: 'Roboto Condensed';
+}
+
+.nav-link:hover{
+    color: #00EBEB !important;
+}
+
+.active .nav-link{
+    color: #00EBEB !important;
+}
+
+.site-content{
+    background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.site-title{
+    color: black;
+    font-family: 'Pacifico';
+}
+
+.heading-img{
+    overflow: hidden;
+}
+
+.heading-img img{
+    margin-top: 5%;
+    height: 200px;
+    width: 200px;
+    transition: all 1.5s ease;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+.site-description{
+    color: black;
+    font-family: 'Righteous';
+}
+
+.site-title{
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-size: 70px;
+}
+
+.site-description{
+    padding-left: 15%;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+}
+/* Section 1*/
+
+.section-1, .heading-1{
+    margin-top: 8%;
+}
+
+.heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+
+.para-1{
+    font-size: 18px;
+    margin-bottom: 6%;
+    color: rgba(0, 0, 0, 0.59);
+}
+
+.card{
+    width: 20rem;
+}
+
+.card-text{
+    color: rgba(0, 0, 0, 0.59);
+}
+
+.section-1{
+    margin-bottom: 3%;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+/* footer */
+
+.footer-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
