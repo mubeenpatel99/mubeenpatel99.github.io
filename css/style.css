@@ -84,7 +84,7 @@ img:hover{
     width: 350px;
     margin: 60px auto;
     color: #000;
-    margin-bottom: 10% !important;
+    margin-bottom: 5%;
 }
 
 .skills li{
@@ -109,22 +109,22 @@ img:hover{
 
 .html{
     width: 90%;
-    animation: html 2s;
+    animation: html 7s;
 }
 
 .css{
     width: 80%;
-    animation: css 2s;
+    animation: css 7s;
 }
 
 .javascript{
     width: 40%;
-    animation: javascript 2s;
+    animation: javascript 7s;
 }
 
 .php{
     width: 15%;
-    animation: php 2s;
+    animation: php 7s;
 }
 
 @keyframes html{
