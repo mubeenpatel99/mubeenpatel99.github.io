@@ -64,7 +64,7 @@ img:hover{
 }
 
 .site-title{
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 3%;
     font-size: 70px;
 }
@@ -94,15 +94,13 @@ img:hover{
 .bar{
     background: #353b48;
     display: block;
-    height: 5px;
-    border: 1px solid rgba(0,0,0,0.3);
+    height: 10px;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 0 10px #2187e7b3;
 }
 
 .bar span{
-    height: 5px;
+    height: 10px;
     float: left;
     background: #2187e7;
 }
@@ -166,7 +164,7 @@ img:hover{
 /* Section 1*/
 
 .section-1, .heading-1{
-    margin-top: 8%;
+    margin-top: 5%;
 }
 
 .heading-2{
@@ -176,7 +174,7 @@ img:hover{
 
 .para-1{
     font-size: 18px;
-    margin-bottom: 6%;
+    margin-bottom: 3%;
     color: rgba(0, 0, 0, 0.59);
 }
 
@@ -209,6 +207,10 @@ img:hover{
     position: center;
 }
 
+.project{
+    font-family: 'Roboto Condensed';
+    margin-bottom: 2%;
+}
 
 /* footer */
 
