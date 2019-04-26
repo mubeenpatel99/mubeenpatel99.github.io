@@ -205,6 +205,10 @@ img:hover{
     transform: scale(1.5);
 }
 
+.card-image-top{
+    position: center;
+}
+
 
 /* footer */
 
