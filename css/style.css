@@ -219,11 +219,16 @@ img:hover{
 }
 
 /* Comtact form */
-.contact-form{
-    margin-top: 10%;
-}
 
 .contact{
     color: lightcoral;
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Pacifico';
+    text-shadow: 2px 2px 2px black;
+}
+
+.contact-description{
+    color: black;
+    font-size: 20px;
+    font-family: 'Ubuntu'
 }
