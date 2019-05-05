@@ -61,6 +61,7 @@ img:hover{
 .site-description{
     color: black;
     font-family: 'Righteous';
+    font-size: 22px !important; 
 }
 
 .site-title{
@@ -213,6 +214,66 @@ img:hover{
 }
 
 /* footer */
+.content {
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 20px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+a.button-slide {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #f5f5f5;
+    background-color: #6c5ce7;
+    letter-spacing: .15rem;
+    font-weight: 300;
+    font-size: 1.5em;
+    height: 5rem;
+    line-height: 5rem;
+    min-width: 22rem;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+a.button-slide span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: inherit;
+    transition: inherit
+}
+
+a.button-slide:before {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: inherit;
+    transition: inherit;
+    content: attr(data-hover);
+    color: #6c5ce7;
+    font-size: 20px !important;
+}
+
+a.button-slide:hover,a.button-slide:focus {
+    background-color: #fafafa;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+a.button-slide:hover span,a.button-slide:focus span {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+a.button-slide:hover:before,a.button-slide:focus:before {
+    top: 0
+}
+
 
 .footer-text{
     font-family: Georgia, 'Times New Roman', Times, serif;
