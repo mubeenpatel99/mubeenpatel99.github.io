@@ -1,52 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu|Indie+Flower|Gloria+Hallelujah|Permanent+Marker|Orbitron');
-
-a{
+a {
     text-decoration: none !important;
 }
 
-body{
+body {
     padding: 0%;
     margin: 0%;
     font-family: 'Lato';
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Pacifico';
     font-size: 35px;
     color: lightcoral !important;
 }
 
-.nav-link{
+.nav-link {
     font-size: 20px;
     color: #000 !important;
     margin: 15px;
     font-family: 'Roboto Condensed';
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #00EBEB !important;
 }
 
-.active .nav-link{
+.active .nav-link {
     color: #00EBEB !important;
 }
 
-.site-content{
+.site-content {
     background-image: url('../images/background.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
 
-.site-title{
+.site-title {
     color: black;
     font-family: 'Pacifico';
 }
 
-.heading-img{
+.heading-img {
     overflow: hidden;
 }
 
-.heading-img img{
+.heading-img img {
     margin-top: 5%;
     height: 200px;
     width: 200px;
@@ -54,31 +53,32 @@ body{
     border-radius: 50%;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.5);
 }
 
-.site-description{
+.site-description {
     color: black;
     font-family: 'Righteous';
-    font-size: 22px !important; 
+    font-size: 22px !important;
 }
 
-.site-title{
+.site-title {
     margin-top: 5%;
     margin-bottom: 3%;
     font-size: 70px;
 }
 
-.site-description{
+.site-description {
     padding-left: 15%;
     font-size: 18px;
     font-family: 'Ubuntu';
 }
 
+
 /* Skill bar design */
 
-.skills{
+.skills {
     font-family: 'Orbitron';
     list-style: none;
     padding: 0;
@@ -88,11 +88,11 @@ img:hover{
     margin-bottom: 5%;
 }
 
-.skills li{
+.skills li {
     margin: 20px 0;
 }
 
-.bar{
+.bar {
     background: #353b48;
     display: block;
     height: 10px;
@@ -100,120 +100,124 @@ img:hover{
     overflow: hidden;
 }
 
-.bar span{
+.bar span {
     height: 10px;
     float: left;
     background: #2187e7;
 }
 
-.html{
+.html {
     width: 90%;
     animation: html 7s;
 }
 
-.css{
+.css {
     width: 80%;
     animation: css 7s;
 }
 
-.javascript{
+.javascript {
     width: 40%;
     animation: javascript 7s;
 }
 
-.php{
+.php {
     width: 15%;
     animation: php 7s;
 }
 
-@keyframes html{
-    0%{
+@keyframes html {
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 90%;
     }
 }
 
-@keyframes css{
-    0%{
+@keyframes css {
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 80%;
     }
 }
 
-@keyframes javascript{
-    0%{
+@keyframes javascript {
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 40%;
     }
 }
 
-@keyframes php{
-    0%{
+@keyframes php {
+    0% {
         width: 0%;
     }
-    100%{
+    100% {
         width: 15%;
     }
 }
 
+
 /* Section 1*/
 
-.section-1, .heading-1{
+.section-1,
+.heading-1 {
     margin-top: 5%;
 }
 
-.heading-2{
+.heading-2 {
     margin-bottom: 5%;
     font-size: 39px;
 }
 
-.para-1{
+.para-1 {
     font-size: 18px;
     margin-bottom: 3%;
     color: rgba(0, 0, 0, 0.59);
 }
 
-.card{
+.card {
     width: 20rem;
     margin: auto;
 }
 
-.card-text{
+.card-text {
     color: rgba(0, 0, 0, 0.59);
 }
 
-.section-1{
+.section-1 {
     margin-bottom: 3%;
 }
 
-.inner{
+.inner {
     overflow: hidden;
 }
 
-.inner img{
+.inner img {
     transition: all 1.5s ease;
 }
 
-.inner:hover img{
+.inner:hover img {
     transform: scale(1.5);
 }
 
-.card-image-top{
+.card-image-top {
     position: center;
 }
 
-.project{
+.project {
     font-family: 'Roboto Condensed';
     margin-bottom: 2%;
 }
 
+
 /* footer */
+
 .content {
     background-color: #fafafa;
     text-align: center;
@@ -259,36 +263,39 @@ a.button-slide:before {
     font-size: 20px !important;
 }
 
-a.button-slide:hover,a.button-slide:focus {
+a.button-slide:hover,
+a.button-slide:focus {
     background-color: #fafafa;
     font-size: 20px !important;
     cursor: pointer;
 }
 
-a.button-slide:hover span,a.button-slide:focus span {
+a.button-slide:hover span,
+a.button-slide:focus span {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%)
 }
 
-a.button-slide:hover:before,a.button-slide:focus:before {
+a.button-slide:hover:before,
+a.button-slide:focus:before {
     top: 0
 }
 
-
-.footer-text{
+.footer-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
 /* Comtact form */
 
-.contact{
+.contact {
     color: lightcoral;
     font-size: 40px;
     font-family: 'Pacifico';
     text-shadow: 2px 2px 2px black;
 }
 
-.contact-description{
+.contact-description {
     color: black;
     font-size: 20px;
     font-family: 'Ubuntu'
