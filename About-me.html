@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Contact Information</title>
+    <title>About me</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -27,14 +30,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contact Me</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactme.html">Contact Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="./About-me.html" class="nav-link">About</a>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">About</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -43,17 +46,47 @@
             </div>
         </nav>
     </header>
+    <!--Nav bar Ended-->
     <main>
-        <div class="container">
-            <h1 class="text-center contact">Contact <span style="color:#00EBEB;">Us</span></h1>
-            <p class="text-center contact-description">Got a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-            <div class="text-center">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYFTT_cUlXIZP3IUyhxdGj0DgDiMGLUgpmmNJ85OOcabf4jg/viewform?embedded=true" width="400" height="1031" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
+        <div class="container text-center">
+            <h1 style="margin-top: 20%; font-family: 'Times New Roman', Times, serif;">Coming Soon</h1>
+            <hr>
+            <!-- Display the countdown timer in an element -->
+            <h1 id="demo" style="margin-bottom: 15%; font-family: 'Times New Roman', Times, serif;"></h1>
+
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("June 5, 2019 15:37:25").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                    // Get todays date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Display the result in the element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                        minutes + "m " + seconds + "s ";
+
+                    // If the count down is finished, write some text
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
         </div>
     </main>
 
-    <hr>
     <footer>
         <section class="content">
             <a class="button-slide" data-hover="patel.mubeen99@gmail.com" href="mailto:patel.mubeen99@gmail.com">
@@ -74,7 +107,6 @@
     </footer>
     <hr>
 
-    <!--Nav bar Ended-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
