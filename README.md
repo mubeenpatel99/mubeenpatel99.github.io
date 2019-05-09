@@ -1,6 +1,6 @@
 [![author](https://img.shields.io/badge/Author-MubeenPatel-green.svg)](https://twitter.com/Patelmubeen99)
 
-<h1 align="center">Mubeen Patel<sub style="color:red">Development</sub></h1>
+<h1 align="center">Mubeen Patel</h1>
 
 * This is a portfolio web page of Mubeen Patel
 
