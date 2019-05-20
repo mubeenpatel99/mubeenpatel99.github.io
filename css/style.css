@@ -235,7 +235,7 @@ button:focus {
 .socialSection {
     padding: 50px 50px;
     background-color: #e74c3c;
-    color: #fff;
+    color: #000;
     font-size: 24px;
     font-family: "Montserrat";
 }
@@ -249,10 +249,6 @@ a {
 }
 
 .socialSection a:hover {
-    color: #000;
-}
-
-.socialSection:hover {
     color: #000;
 }
 
