@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Engineering Student.", "Web Developer 👨🏻‍💻.", "Scroll Down.", "Stay Connected."],
+        strings: ["Engineering Student,", "Web Developer,", "Scroll Down,", "Stay Connected."],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
@@ -67,5 +67,7 @@ $(document).ready(function() {
             });
         }
     });
+
+    $("[data-fancybox]").fancybox();
 
 });

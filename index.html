@@ -13,6 +13,9 @@
     <!-- Owl Carousel css Sheet -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
 
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <!-- Font awesome link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -33,7 +36,7 @@
 <body>
     <!-- !? Navabar -->
     <nav id="navigation" class="navbar navbar-expand-lg sticky-top">
-        <a class="navbar-brand" href="#slides">MUBEEN PATEL</a>
+        <a class="navbar-brand" href="#slides">PATEL MUBEEN</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"><i class="fas fa-caret-down"></i></span>
@@ -59,9 +62,9 @@
     <div id="slides">
         <div class="overlay"></div>
         <div class="slides-container">
+            <img src="./images/slidesheet/laptop.jpg" alt="">
             <img src="./images/slidesheet/image.jpg" alt="">
             <img src="./images/slidesheet/images1.jpg" alt="">
-            <img src="./images/slidesheet/laptop.jpg" alt="">
         </div>
 
         <div class="title">
@@ -187,6 +190,7 @@
     <!-- !? Stats Section -->
     <div id="stats" class="statsSection section">
         <div class="container">
+            <h2>STATS</h2>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="sqaureItem">
@@ -258,48 +262,87 @@
     </div>
 
     <!-- project section -->
-    <div class="container text-center" id="project">
-        <h1 style="margin-top: 10%;">Click on the button below to download the resume</h1>
-        <a href="./files/Resume.pdf" download="Mubeen Patel Resume">
-            <p class="downloadButton" style=" margin-bottom: 10%;">
-                Resume Download <i class="fas fa-download"></i>
-            </p>
-        </a>
-        <h1 class="comingSoon">Coming Soon</h1>
-        <hr>
-        <!-- Display the countdown timer in an element -->
-        <h1 id="demo" class="comingSoon" style=" margin-bottom: 10%;"></h1>
+    <div id="project" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <h2 class="project-heading">Projects</h2>
+                </div>
+                <div class="Itemscontainer justify-content-center ">
+                    <ul class="items text-center">
+                        <li onclick="" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./images/projects/thumbnails/overview-thumb.png" alt="">
+                                <div class="icons">
+                                    <a href="./images/projects/webpage-overview.gif" title="View Image" class="openButton" data-fancybox data-caption="This is my old portfolio webpage">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="" target="_blank" title="Open Link" class="projectLink">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="info">
+                                <p>Old Portfolio</p>
+                            </div>
+                        </li>
+                        <li onclick="" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./images/projects/thumbnails/tic_tac_toe.png" alt="">
+                                <div class="icons">
+                                    <a href="./images/projects/Tic-Tac-Toe.jpg" title="View Image" class="openButton" data-fancybox data-caption="This is a tic tac toe game made in Java">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://github.com/mubeenpatel99/Tic_Tac_Toe" target="_blank" title="Open Link" class="projectLink">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="info">
+                                <p>Tic Tac Toe</p>
+                            </div>
+                        </li>
+                        <li onclick="" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./images/projects/thumbnails/hangman.jpg" alt="">
+                                <div class="icons">
+                                    <a href="./images/projects/hangman.jpg" title="View Image" class="openButton" data-fancybox data-caption="This is a computerized Version of our childhood Hangman game!!">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://github.com/mubeenpatel99/Hangman-game" target="_blank" title="Open Link" class="projectLink">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="info">
+                                <p>Hangman</p>
+                            </div>
+                        </li>
+                        <li onclick="" class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./images/projects/thumbnails/google_dinosaur.png" alt="">
+                                <div class="icons">
+                                    <a href="./images/projects/google-dinosaur.gif" title="View Image" class="openButton" data-fancybox data-caption="This is a bot that saves you from pressing spacebar!!">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="https://github.com/mubeenpatel99/google-Dinosaur-game-bot" target="_blank" title="Open Link" class="projectLink">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="info">
+                                <p>Google Dinosaur Bot</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("June 5, 2019  17:00:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-
-                // Get todays date and time
-                var now = new Date().getTime();
-
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
-
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Display the result in the element with id="demo"
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-                    minutes + "m " + seconds + "s ";
-
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-        </script>
+            </div>
+        </div>
     </div>
 
     <div class="socialSection" id="socials">
@@ -340,6 +383,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Fancy Box Jquery -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <!-- Link to our custom JS file -->
     <script src="./js/script.js"></script>
