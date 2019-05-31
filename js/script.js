@@ -5,12 +5,16 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
+    //scroll to top when page refreshes
     $(this).scrollTop(0);
+    //calling the scroll function for the navbar highlught effect
+    $(document).on("scroll", onScroll);
+    //super slides
     $('#slides').superslides({
         animation: 'fade',
         play: 5000
     });
-
+    //For Typed Effect
     var typed = new Typed(".typed", {
         strings: ["Engineering Student,", "Web Developer,", "Scroll Down,", "Stay Connected."],
         typeSpeed: 70,
@@ -19,6 +23,7 @@ $(document).ready(function() {
         showCursor: false,
     });
     console.log(typed)
+        // Owl-carousel
     $('.owl-carousel').owlCarousel({
         loop: true,
         items: 4,
@@ -40,16 +45,16 @@ $(document).ready(function() {
             }
         }
     });
-
+    //to scroll to a particular ID smoothly
     $("#navigation a").click(function(e) {
         e.preventDefault();
 
         var targetElement = $(this).attr("href");
         var targetPosition = $(targetElement).offset().top;
-        $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow")
+        $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
 
     });
-
+    //to start the pie chart animation.
     var skillsTopOffset = $(".skillsSection").offset().top;
 
     $(window).scroll(function() {
@@ -71,3 +76,18 @@ $(document).ready(function() {
     $("[data-fancybox]").fancybox();
 
 });
+// make the nav link active on scroll
+function onScroll(event) {
+    event.preventDefault();
+    var scrollPos = $(document).scrollTop();
+    $('nav#navigation a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top - 100 <= scrollPos && refElement.position().top + refElement.height() + 100 > scrollPos) {
+            $('nav#navigation a').removeClass("active");
+            currLink.addClass("active");
+        } else {
+            currLink.removeClass("active");
+        }
+    });
+}

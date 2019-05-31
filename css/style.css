@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Major+Mono+Display|Montserrat&display=swap');
 body {
     margin: 0px;
     font-size: 16px;
@@ -71,6 +71,46 @@ button:focus {
     color: #fff;
 }
 
+#nav a.active {
+    color: #000;
+    font-size: 20px;
+}
+
+#nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav a.active:hover {
+    color: #000;
+}
+
+#nav a:hover {
+    color: #000;
+}
+
+#nav a.active:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#nav a.active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 .navbar-toggler-icon {
     color: #fff;
     font-size: 30px;
@@ -85,9 +125,6 @@ button:focus {
     max-width: 100%;
     height: 550px;
     margin-bottom: 30px;
-}
-
-.aboutImage:hover {
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -98,7 +135,7 @@ button:focus {
 
 .qoute {
     font-size: 26px;
-    font-family: 'Lobster';
+    font-family: 'Cinzel';
 }
 
 .skillsSection,
@@ -153,10 +190,6 @@ button:focus {
     border: 2px solid #444;
     border-top: none;
     text-align: center;
-}
-
-.sqaureInnerContainer:hover {
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
 
 .sqaureInnerContainer:before,
@@ -232,7 +265,7 @@ button:focus {
     -moz-transition: all 0.2s linear, 1s;
     -o-transition: all 0.2s linear, 1s;
     -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+    transition: all 0.2s linear, 1s;
 }
 
 .items li {
@@ -275,7 +308,7 @@ button:focus {
     -moz-transition: all 0.2s linear, 0.2s;
     -o-transition: all 0.2s linear, 0.2s;
     -ms-transition: all 0.2s linear, 0.2s;
-    -transition: all 0.2s linear, 0.2s;
+    transition: all 0.2s linear, 0.2s;
 }
 
 .imageOverlay {
@@ -290,7 +323,7 @@ button:focus {
     -moz-transition: all 0.2s linear, 1s;
     -o-transition: all 0.2s linear, 1s;
     -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+    transition: all 0.2s linear, 1s;
 }
 
 .info {
@@ -332,7 +365,7 @@ button:focus {
     -moz-transform: scale(1.05, 1.05);
     -o-transform: scale(1.05, 1.05);
     -ms-transform: scale(1.05, 1.05);
-    -transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
 }
 
 .items {
