@@ -5,9 +5,20 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
+    // add a blur animation for about loading
+    var statsSection = $('div.sqaureIcon'),
+        statsSectionOffset = (statsSection.offset().top + 300) / 2;
+    var aboutElement = $('div.about-me'),
+        aboutElementoffset = aboutElement.offset().top / 2,
+        documentElement = $(document);
+    documentElement.on('scroll', function() {
+        if (documentElement.scrollTop() > aboutElementoffset + 500 && aboutElement.hasClass('hidden')) aboutElement.removeClass('hidden');
+        else if (documentElement.scrollTop() > statsSectionOffset && statsSection.hasClass('hidden'))
+            statsSection.removeClass('hidden');
+    });
     //scroll to top when page refreshes
     $(this).scrollTop(0);
-    //calling the scroll function for the navbar highlught effect
+    //calling the scroll function for the navbar highlight effect
     $(document).on("scroll", onScroll);
     //super slides
     $('#slides').superslides({
