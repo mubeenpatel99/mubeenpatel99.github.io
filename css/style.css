@@ -424,6 +424,11 @@ button:focus {
 
 /* Project Section */
 
+.press {
+    text-transform: capitalize;
+    color: #000;
+}
+
 .project-heading {
     text-align: center;
     text-transform: uppercase;
@@ -577,4 +582,73 @@ a {
 
 .copyrightSection p {
     margin: 0;
+}
+
+
+/* Theme Wordpress page */
+
+.heading {
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    font-size: 300% !important;
+}
+
+.main-content article {
+    font-size: 16px;
+}
+
+.first-letter {
+    font-size: 40px;
+}
+
+.instruction-steps h3 {
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+.downlaod-theme-btn {
+    border: 1px solid #e74c3c;
+    padding: 10px;
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.downlaod-theme-btn a:link,
+.downlaod-theme-btn a:visited {
+    color: #fff;
+}
+
+.clearfix {
+    margin-top: 10px;
+}
+
+.instruction-steps img {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+}
+
+.instruction-steps p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.theme-description img {
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    width: 100%;
+}
+
+.theme-description p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.theme-description h3 {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    text-decoration: underline;
+    color: #e74c3c;
 }

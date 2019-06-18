@@ -5,7 +5,7 @@ $(window).on("load", function() {
 });
 
 $(document).ready(function() {
-    // add a blur animation for about loading
+    // add a blur animation for about and stats section loading
     var statsSection = $('div.sqaureIcon'),
         statsSectionOffset = (statsSection.offset().top + 300) / 2;
     var aboutElement = $('div.about-me'),
