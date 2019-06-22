@@ -652,3 +652,42 @@ a {
     text-decoration: underline;
     color: #e74c3c;
 }
+
+
+/* Android tic tac toe */
+
+.download-btn {
+    margin: 15px;
+    text-align: center;
+}
+
+.download-btn a {
+    text-decoration: none;
+    border: 1px solid #e74c3c;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.download-btn a:link,
+.download-btn a:visited {
+    color: #fff;
+}
+
+.download-btn a:hover {
+    color: #000;
+}
+
+.demo {
+    margin: 30px;
+}
+
+.demo h4 {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.marg {
+    margin-right: 40px;
+}
