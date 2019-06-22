@@ -656,18 +656,18 @@ a {
 
 /* Android tic tac toe */
 
-.download-btn {
-    margin: 15px;
-    text-align: center;
-}
-
 .download-btn a {
     text-decoration: none;
     border: 1px solid #e74c3c;
-    padding: 10px;
     border-radius: 5px;
+    padding: 10px;
     background-color: #e74c3c;
     color: #fff;
+}
+
+.download-btn {
+    margin-top: 10px;
+    text-align: center;
 }
 
 .download-btn a:link,
@@ -690,4 +690,8 @@ a {
 
 .marg {
     margin-right: 40px;
+}
+
+.demo video {
+    width: 100%;
 }
