@@ -699,13 +699,11 @@ a {
 
 /* Youtube Link  */
 
-.youtube-link:hover {
-    color: #000 !important;
-    border: 1px solid #fff;
-    background-color: #fff;
-    transition: 0.5s;
+.main a:link,
+.main a:visited {
+    color: #fff;
 }
 
-.youtube-link {
-    border-radius: 5px;
+.main a:hover {
+    color: #e74c3c;
 }
