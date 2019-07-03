@@ -695,3 +695,17 @@ a {
 .demo video {
     width: 100%;
 }
+
+
+/* Youtube Link  */
+
+.youtube-link:hover {
+    color: #000 !important;
+    border: 1px solid #fff;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.youtube-link {
+    border-radius: 5px;
+}
