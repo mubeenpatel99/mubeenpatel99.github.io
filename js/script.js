@@ -4,6 +4,12 @@ $(window).on("load", function() {
     });
 });
 
+AOS.init({
+    duration: 800,
+    easing: 'slide',
+    once: true
+});
+
 $(document).ready(function() {
     // add a blur animation for about and stats section loading
     var statsSection = $('div.sqaureIcon'),

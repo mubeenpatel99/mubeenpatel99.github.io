@@ -128,7 +128,8 @@ button:focus {
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.about-me {
+
+/* .about-me {
     transform: perspective(800px);
 }
 
@@ -146,7 +147,7 @@ button:focus {
 .about-me.hidden p {
     opacity: 0;
     transform: translate3d(0, 0, 50px)
-}
+} */
 
 .Head {
     font-family: 'Montserrat';
