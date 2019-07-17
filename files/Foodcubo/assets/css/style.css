@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico&display=swap');
+
+/* Resizing the logo for navbar */
+
+.navbar-brand img {
+    height: 15%;
+    width: 15%;
+}
+
+li.active a:link,
+li.active a:visited {
+    font-size: 20px;
+    color: #d43031 !important;
+    border-bottom: 2px dotted #d43031;
+}
+
+.btn-custom-search {
+    background-color: transparent;
+    border: 1px solid #d43031;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-custom-search:hover {
+    background-color: #d43031;
+    color: #fff;
+    transition: ease-in;
+    border-radius: 5px;
+}
+
+body {
+    background-image: url('../../images/landing-page.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Montserrat';
+}
+
+.brand {
+    margin-top: 10%;
+    margin-bottom: 21%;
+}
+
+.brand h1 {
+    font-family: 'Pacifico';
+    font-size: 64px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.brand a:link,
+.brand a:visited {
+    color: #fff;
+    padding: 5px 30px 5px 30px;
+    background-color: transparent;
+    font-size: 24px;
+    font-family: 'Pacifico';
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 5%;
+}
+
+.brand a:hover {
+    color: #fff;
+    background-color: #d43031;
+    transition: ease-in 300ms;
+    border: 1px solid #d43031;
+}
+
+.login {
+    background-color: #fff;
+    height: 100%;
+}
+
+.login-box h1 {
+    margin-bottom: 5%;
+}
+
+.login-box {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: 'Montserrat';
+}
+
+.about-us {
+    background-color: #ededed;
+    padding-bottom: 5%;
+}
+
+.about-img img {
+    width: 100%;
+    margin-top: 12%;
+}
+
+.about-text h1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.under {
+    padding: 0 0 10px 0;
+    border-bottom: 2px solid #d43031;
+}
+
+.about-text p {
+    color: #999;
+}
+
+.forgot {
+    margin-top: 5%;
+}
+
+.categories {
+    background-color: #fff;
+    font-family: 'Montserrat';
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.categories h1 {
+    padding-bottom: 5%;
+}
+
+.catunder {
+    border-bottom: 1px solid #d43031;
+}
+
+.main-cat h4 {
+    margin-bottom: 15px;
+}
+
+.contact {
+    background-color: #333;
+    color: #aaa;
+    font-family: 'Montserrat';
+}
+
+.contact h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact a:link,
+.contact a:visited {
+    color: #777;
+    text-decoration: none;
+}
+
+.contact p {
+    font-size: 15px;
+    color: #777;
+}
+
+.contact-form input {
+    background-color: transparent;
+}
+
+.form-grou input,
+.form-grou textarea {
+    background-color: rgba(255, 255, 255, .2);
+    border: none;
+}
+
+.form-grou input::placeholder,
+.form-grou textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-custom {
+    color: #777;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid #777;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    border-radius: 0;
+}
+
+.btn-custom:hover {
+    background-color: #d43031;
+    color: #fff;
+    border: 2px solid #d43031;
+}
+
+.copyright {
+    padding: 10px;
+    background-color: #262626;
+}
+
+.copyright p {
+    color: #777;
+}
+
+.social a:link,
+.social a:visited {
+    color: #777;
+}
+
+.social a {
+    padding: 10px;
+}
+
+.social a i {
+    font-size: 30px;
+}
+
+.copy a:link,
+.copy a:visited {
+    color: #aaa;
+    text-decoration: none;
+}

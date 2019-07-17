@@ -10,7 +10,26 @@ AOS.init({
     once: true
 });
 
+//show more Button
+function showMore() {
+    $(document.getElementById('Hidden')).toggle();
+    $(document.getElementById('Hidde')).toggle();
+    $(document.getElementById('Hide-less')).toggle();
+    document.getElementById('Hidden').setAttribute('data-aos', 'zoom-in');
+    document.getElementById('Hidden').setAttribute('data-aos-delay', '500');
+}
+
+function showLess() {
+    document.getElementById('Hidden').setAttribute('data-aos', 'zoom-out');
+    document.getElementById('Hidden').setAttribute('data-aos-delay', '1000');
+    $(document.getElementById('Hidden')).toggle();
+    $(document.getElementById('Hidde')).toggle();
+    $(document.getElementById('Hide-less')).toggle();
+}
+
 $(document).ready(function() {
+    $(document.getElementById('Hidden')).hide();
+    $(document.getElementById('Hide-less')).hide();
     // add a blur animation for about and stats section loading
     var statsSection = $('div.sqaureIcon'),
         statsSectionOffset = (statsSection.offset().top + 300) / 2;

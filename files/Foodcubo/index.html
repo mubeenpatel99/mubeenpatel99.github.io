@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Foodcubo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- superslide style sheet -->
+    <link rel="stylesheet" href="./assets/css/superslides.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icon for webpage -->
+    <link rel="icon" href="./images/logo/foodcubo.png">
+
+    <!-- Jqueryy -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Custom Style sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><img src="./images/logo/foodcubo.png" alt=""> Foodcubo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link scroll" href="#intro">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#login-form">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                          </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item scroll" href="#cat">Category 1</a>
+                        <a class="dropdown-item scroll" href="#cat">Category 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item scroll" href="#cat">Most Ordered</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#contact-us">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="looking for?" aria-label="Search">
+                <button class="btn-custom-search my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- header -->
+    <header>
+        <div class="brand text-center" id="intro">
+            <img src="./images/logo/foodcubo.png" alt="" data-aos="zoom-in" data-aos-delay="300">
+            <h1 data-aos="zoom-in" data-aos-delay="400">FoodCubo</h1>
+            <a href="#login-form" data-aos="zoom-in" data-aos-delay="600">Login</a>
+        </div>
+    </header>
+    <div class="login" id="login-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="login-box">
+                        <h1><span class="under">Sign</span> Up</h1>
+                        <form action="./assets/php/register.php">
+                            <div class="form-group">
+                                <label for="">Username</label>
+                                <input type="text" name="user" class="form-control" placeholder="Jhon" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="jhon@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Minimum length 8 alphanumeric and special symbols" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success"> Sign Up </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="login-box">
+                        <h1><span class="under">Login</span> Here</h1>
+                        <form action="./assets/php/validate.php">
+                            <div class="form-group">
+                                <label for="">Username</label>
+                                <input type="text" name="user" class="form-control" placeholder="Jhon" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" name="password" class="form-control" placeholder="Your Password" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success"> Login </button>
+                            </div>
+                            <div class="row forgot">
+                                <div class="col-md-6">
+                                    <a href="#">Forgot Password?</a>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <a href="#">Help?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us" id="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./images/gallery-bg.jpg" alt="">
+                </div>
+                <div class="col-md-6 about-text" data-aos="zoom-in" data-aos-delay="400">
+                    <h1><span class="under">About</span> Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident eos error mollitia nihil culpa repellendus harum voluptatibus architecto ipsam molestias hic voluptate, veniam perspiciatis dicta nobis. Vel tempore dignissimos
+                        provident animi adipisci veritatis, dolore repellat quibusdam numquam omnis doloremque, odit sequi, optio fugiat eius dolorem. Ducimus quibusdam mollitia quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima,
+                        delectus odit autem voluptatum ipsum ratione earum placeat esse, obcaecati hic molestiae perferendis rerum nesciunt corrupti fugiat praesentium. Quae exercitationem velit accusantium ratione voluptatibus quisquam perspiciatis,
+                        fuga, impedit, pariatur aliquid dicta incidunt nam in placeat numquam eum reiciendis recusandae rem dolore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories" id="categories">
+        <div class="container" id="cat">
+            <h1 class="text-center">Catgories</h1>
+            <div class="row text-center">
+                <div class="col-md-3 main-cat" data-aos="zoom-in" data-aos-delay="100">
+                    <h4>Ca<span class="catunder">tegor</span>y 1</h4>
+                    <li>Dish 1</li>
+                    <li>Dish 2</li>
+                    <li>Dish 3</li>
+                    <li>Dish 4</li>
+                </div>
+                <div class="col-md-3 main-cat" data-aos="zoom-in" data-aos-delay="200">
+                    <h4>Ca<span class="catunder">tegor</span>y 2</h4>
+                    <li>Dish 1</li>
+                    <li>Dish 2</li>
+                    <li>Dish 3</li>
+                    <li>Dish 4</li>
+                </div>
+                <div class="col-md-3 main-cat" data-aos="zoom-in" data-aos-delay="300">
+                    <h4>Ca<span class="catunder">tegor</span>y 3</h4>
+                    <li>Dish 1</li>
+                    <li>Dish 2</li>
+                    <li>Dish 3</li>
+                    <li>Dish 4</li>
+                </div>
+                <div class="col-md-3 main-cat" data-aos="zoom-in" data-aos-delay="400">
+                    <h4>Ca<span class="catunder">tegor</span>y 4</h4>
+                    <li>Dish 1</li>
+                    <li>Dish 2</li>
+                    <li>Dish 3</li>
+                    <li>Dish 4</li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact-us">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>pr<span class="under">ivacy Poli</span>cy</h3>
+                    <a href="#">Copyrights</a>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>ad<span class="under">DRE</span>ss</h3>
+                    <p>Patna <br> Foodcubo</p>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                    <h3>pr<span class="under">oble</span>ms</h3>
+                    <li data-aos="zoom-in" data-aos-delay="400">
+                        <a href="#">Complaints</a>
+                    </li>
+                    <li data-aos="zoom-in" data-aos-delay="500">
+                        <a href="#">Suggestions</a>
+                    </li>
+                    <li data-aos="zoom-in" data-aos-delay="600">
+                        <a href="#">Payment Issue</a>
+                    </li>
+                </div>
+            </div>
+            <h3 class="text-center" data-aos="zoom-in" data-aos-delay="700">Send U<span class="under">s a M</span>essage</h3>
+            <div class="container contact">
+                <form name="sentMessage" class="contact-form" id="contact-us" action="./assets/php/contact-form.php">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="800">
+                            <div class="form-grou">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="900">
+                            <div class="form-grou">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-grou" data-aos="zoom-in" data-aos-delay="1000">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required=""></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="1100">
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="copy">&copy; 2019 Mubeen. All rights reserved. Design by <a href="http://mubeenpatel.cf" rel="nofollow" target="_blank">Mubeen</a></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="social text-right">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Animate on scroll -->
+    <script src="./assets/js/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
