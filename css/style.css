@@ -565,6 +565,7 @@ button:focus {
     background-color: #eb1e0cfd;
     color: #fff;
     transition: ease-in-out 0.6s;
+    cursor: pointer;
 }
 
 
