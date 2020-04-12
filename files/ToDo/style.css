@@ -59,6 +59,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap;
 }
 
 form input {
@@ -208,4 +209,16 @@ option {
     transition: all 0.3s ease;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 786px) {
+    header h1 {
+        font-size: 28px;
+    }
+    form input {
+        width: 80%;
+    }
+    .todo-item {
+        font-size: 18px;
+    }
 }
