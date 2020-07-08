@@ -7,6 +7,10 @@ body {
     letter-spacing: 1px;
 }
 
+.hidden {
+    display: none;
+}
+
 button:focus {
     outline: none !important;
 }
